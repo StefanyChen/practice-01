@@ -9,22 +9,18 @@
   window.addEventListener('keydown',function(e){
       const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
       const div = document.querySelector(`div[data-key="${e.keyCode}"]`);
-      const h1 = document.querySelector(`h1[data-key="${e.keyCode}"]`);
-      const p = document.querySelector(`p[data-key="${e.keyCode}"]`);
       if(!audio) return;
       audio.currentTime = 0;
       audio.play();
       div.style.border="solid 5px yellow";
-      h1.style.fontSize="60px";
-      p.style.fontSize="18px";
+      div.children[0].style.transform="scale(1.5,1.5)";
+      div.children[1].style.transform="scale(1.5,1.5)";
   })
   window.addEventListener('keyup',function(e){
       const div = document.querySelector(`div[data-key="${e.keyCode}"]`);
-      const h1 = document.querySelector(`h1[data-key="${e.keyCode}"]`);
-      const p = document.querySelector(`p[data-key="${e.keyCode}"]`);
       div.style.border="solid 5px black";
-      h1.style.fontSize="50px";
-      p.style.fontSize="15px";
+      div.children[0].style.transform="scale(1,1)";
+      div.children[1].style.transform="scale(1,1)";
   })
   </script>
 </head>
