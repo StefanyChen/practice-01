@@ -7,16 +7,22 @@
 <!--  <script scr="js.js"></script>-->
   <script>
   window.addEventListener('keydown',function(e){
-      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+      var audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+      var div = document.querySelector(`div[data-key="${e.keyCode}"]`);
       if(!audio) return;
       audio.currentTime = 0;
       audio.play();
+      div.style.border="solid 5px yellow ";
+  })
+  window.addEventListener('keyup',function(e){
+      const div = document.querySelector(`div[data-key="${e.keyCode}"]`);
+      div.style.border="solid 5px black";
   })
   </script>
 </head>
 <body>
     <div class="all">
-      <div class="drum" data-key='65'>
+      <div class="drum" data-key='65' >
         <h1>A</h1>
         <p>CLAP</p>
       </div>
