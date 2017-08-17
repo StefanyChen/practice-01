@@ -1,0 +1,30 @@
+html{
+  height:100%;
+}
+body{
+  background-image: url('images/b9r5sEL.jpg');
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+.all
+{
+  width: 1900px;
+  margin:auto;
+  position:absolute;
+  top:45%
+}
+
+.drum{
+  height:115px;
+  width:179px;
+  border: solid 5px black ;
+  display: inline-block;
+  margin-left: 0.46%;
+  margin-right: 0.46%;
+  border-radius: 8px;
+/*  background-color:black;
+  opacity:0.3;
+  background-clip: padding-box;*/
+}

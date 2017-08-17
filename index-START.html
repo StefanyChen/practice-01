@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+<!--  <script scr="js.js"></script>-->
+  <script>
+  window.addEventListener('keydown',function(e){
+      const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+      if(!audio) return;
+      audio.play();
+  })
+  </script>
+</head>
+<body>
+    <div class="all">
+      <div class="drum" data-key='65'>
+      </div>
+      <div class="drum" data-key='83'>
+
+      </div>
+      <div class="drum" data-key='68'>
+
+      </div>
+      <div class="drum" data-key='70'>
+
+      </div>
+      <div class="drum" data-key='71'>
+
+      </div>
+      <div class="drum" data-key='72'>
+
+      </div>
+      <div class="drum" data-key='74'>
+
+      </div>
+      <div class="drum" data-key='75'>
+
+      </div>
+      <div class="drum" data-key='76'>
+
+      </div>
+    </div>
+    <audio data-key='65' src="sounds/clap.wav"></audio>
+    <audio data-key='83' src="sounds/clap.wav"></audio>
+    <audio data-key='68' src="sounds/clap.wav"></audio>
+    <audio data-key='70' src="sounds/clap.wav"></audio>
+    <audio data-key='65' src="sounds/clap.wav"></audio>
+    <audio data-key='65' src="sounds/clap.wav"></audio>
+    <audio data-key='65' src="sounds/clap.wav"></audio>
+    <audio data-key='65' src="sounds/clap.wav"></audio>
+    <audio data-key='65' src="sounds/clap.wav"></audio>
+
+</body>
+</html>
